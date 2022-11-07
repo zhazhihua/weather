@@ -1,97 +1,123 @@
-.cloud{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(75, 86, 98) , rgb(165,183,200));
-  }
-  .sunny{
-    height: 100vh;
-    background-image: linear-gradient(to bottom,rgb(90, 201, 245),rgb(175, 238, 247));
-    color: #000;
-  }
-.location{
-    padding-top: 10px;
-    padding-left: 10px;
-    height: 5vh;
-  }
-  .location img{
-    width: 15px;
-    margin-left: 3px;
-  }
-  .temperature{
-    position: relative;
-    height: 20vh;
-  }
-  .temperature span{
-    position: absolute;
-    line-height: 18vh;
-    font-size: 80px;
-    left: 50vw;
-    transform: translate(-50%);
-  }
-  .wind{
-    height: 8vh;
-    position: relative;
-  }
-  .wind span{
-    position: absolute;
-    line-height: 40px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  .air{
-    background-color: rgb(58, 179, 98);
-    width: 30vw;
-    height: 3vh;
-    text-align: center;
-    border-radius: 30px;
-    margin: 0 auto;
-  }
-  .air::after{
-    content: ">";
-    margin-left: 10px;
-  }
-  .date{
-    background-color: #fff;
-    height: 16vh;
-    padding-top: 5px;
-  }
-  .date ul{
-    padding: 10px;
-    margin: 0;
-  }
-  .date ul li{
-    float: left;
-    list-style: none;
-    width: 66px;
-    height: 80px;
-    color: #000;
-    font-size: 10px;
-  }
-  .date ul li p{
-    text-align: center;
-  }
-  .todayWeather{
-    font-size: 12px;
-    margin-top: 20px;
-    padding-left: 10px;
-  }
-  .todayWeather select{
-    margin-left: 65px;
-    width: 90px;
-    height: 20px;
-    background-color: rgb(176, 189, 203);
-    border-radius: 20px;
-    font-size: 2px;
-    border: none;
-    outline: none;
-  }
-  .todayWeather div{
-    position: relative;
-  }
-  .pic{
-    margin-left: 20px;
-  }
-  .pic li{
-    float: left;
-    list-style: none;
-    width: 60px;
-  }
+.cloud {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(75, 86, 98),
+    rgb(165, 183, 200)
+  );
+}
+
+.sunny {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(90, 201, 245),
+    rgb(175, 238, 247)
+  );
+  color: #000;
+}
+
+.location {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 5vh;
+}
+
+.location img {
+  width: 15px;
+  margin-left: 3px;
+}
+
+.temperature {
+  position: relative;
+  height: 20vh;
+}
+
+.temperature span {
+  position: absolute;
+  line-height: 18vh;
+  font-size: 80px;
+  left: 50vw;
+  transform: translate(-50%);
+}
+
+.wind {
+  height: 8vh;
+  position: relative;
+}
+
+.wind span {
+  position: absolute;
+  line-height: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.air {
+  background-color: rgb(58, 179, 98);
+  width: 30vw;
+  height: 3vh;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.air::after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.date {
+  background-color: #fff;
+  height: 16vh;
+  padding-top: 5px;
+}
+
+.date ul {
+  padding: 10px;
+  margin: 0;
+}
+
+.date ul li {
+  float: left;
+  list-style: none;
+  width: 66px;
+  height: 80px;
+  color: #000;
+  font-size: 10px;
+}
+
+.date ul li p {
+  text-align: center;
+}
+
+.todayWeather {
+  font-size: 12px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.todayWeather select {
+  margin-left: 65px;
+  width: 90px;
+  height: 20px;
+  background-color: rgb(176, 189, 203);
+  border-radius: 20px;
+  font-size: 2px;
+  border: none;
+  outline: none;
+}
+
+.todayWeather div {
+  position: relative;
+}
+
+.pic {
+  margin-left: 20px;
+}
+
+.pic li {
+  float: left;
+  list-style: none;
+  width: 60px;
+}
