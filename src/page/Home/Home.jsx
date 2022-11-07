@@ -104,7 +104,7 @@ function Home() {
         showecharts()
     }, [nowWeather, hours, month, city])
     return (
-        <div className='Home'>
+        <div className={nowWeather.wea == '晴'?'sunny':'cloud' }>
             <div className='location'>
                 <Select
                     size='small'

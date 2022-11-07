@@ -1,6 +1,11 @@
-.Home{
+.cloud{
     height: 100vh;
     background-image: linear-gradient(to bottom, rgb(75, 86, 98) , rgb(165,183,200));
+  }
+  .sunny{
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(90, 201, 245),rgb(175, 238, 247));
+    color: #000;
   }
 .location{
     padding-top: 10px;
@@ -34,7 +39,7 @@
   }
   .air{
     background-color: rgb(58, 179, 98);
-    width: 70px;
+    width: 30vw;
     height: 3vh;
     text-align: center;
     border-radius: 30px;
