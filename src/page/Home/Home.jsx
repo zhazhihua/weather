@@ -12,12 +12,9 @@ function Home() {
   const [month, setmonth] = useState([])
   const [city, setcity] = useState('南昌')
   const [dayforecast, setdayforecast] = useState(0)
-  const [count, setcount] = useState(0)
-  const [msg,setmsg] = useState('')
   const { Search } = Input
   const onSearch = (value) => {
     if (value) {
-      setcount(0)
       setcity(value)
     }
   }
@@ -70,7 +67,6 @@ function Home() {
   }
   function changeForecast(e) {
     setdayforecast(e.target.value)
-    setcount(0)
     getWeatherData()
   }
   function getWeatherData() {
@@ -88,8 +84,11 @@ function Home() {
             setmonth(res.data.month.slice(0, 5))
           }
         } else {
-          setmsg(res.data.errmsg)
+          throw new Error(res.data.errmsg)
         }
+      })
+      .catch((error) => {
+        alert(error)
       })
   }
   function getNowWeatherData() {
@@ -102,22 +101,16 @@ function Home() {
       })
   }
   const handleChange = (value) => {
-    setcount(0)
     setcity(value)
   }
   const chartRef = useRef(null)
   useEffect(() => {
-    setcount(count + 1)
-    if (count < 1) {
       getWeatherData()
       getNowWeatherData()
-    }
-    if(msg) {
-      alert(msg)
-      setmsg('')
-    }
+  }, [city,dayforecast])
+  useEffect(() => {
     showecharts()
-  }, [nowWeather, hours, month, city, msg])
+  })
   return (
     <div className={nowWeather.wea == '晴' ? 'sunny' : 'cloud'}>
       <div className="location">
